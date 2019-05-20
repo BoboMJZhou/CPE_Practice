@@ -1,4 +1,4 @@
-# CPE_Practice
+# Programming_Practice
 
 It's for practicing CPE questions.
-All the files ARE NOT the officially answer, just a answer written by me.
+All the files ARE NOT the officially answer, just a answer which is written by me.
