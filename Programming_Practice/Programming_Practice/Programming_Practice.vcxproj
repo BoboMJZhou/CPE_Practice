@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{AAF59259-A189-43FF-8E29-F2A181021ABD}</ProjectGuid>
+    <ProjectGuid>{BEBDEBF2-30AF-4C5C-8C13-E00A3DD7725C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ProgrammingPractice</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -151,7 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Programming_Practice.cpp" />
+    <ClCompile Include="uva100.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
