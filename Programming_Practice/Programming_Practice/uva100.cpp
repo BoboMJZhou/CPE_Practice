@@ -1,43 +1,43 @@
-
 #include <iostream>
 using namespace std;
 
-int FindCycleLength(int x)
+int MaxCycleLength(int i)
 {
-	int length = 1;
-	if (x == 1)
+	int len = 1;
+	while (i != 1)
 	{
-		return 1;
+		if (i % 2 == 0)
+			i = i / 2;
+		else
+			i = 3 * i + 1;
+		len++;
 	}
-	else if (x % 2 == 0)
-	{
-		return length + FindCycleLength(x / 2);
-	}
-	else
-	{
-		return length + FindCycleLength( x * 3 + 1);
-	}
+	return len;
 }
 
-int main()
-{
+int main() {
+
 	int i, j;
-	while (cin >> i >> j)
-	{
+	while (cin >> i) {
+		cin >> j;
+		cout << i << " " << j << " ";
+		int maxLength = 0;
 		if (i > j)
 		{
 			int t = i;
 			i = j;
 			j = t;
 		}
-		int max_cycle = 0;
-		for (int x = i; x <= j; x++)
+		for (int a = i; a <= j; a++)
 		{
-			int temp_cycle = FindCycleLength(x);
-			if (max_cycle < temp_cycle)
-				max_cycle = temp_cycle;
+			int temp = MaxCycleLength(a);
+			if (temp > maxLength)
+			{
+				maxLength = temp;
+			}
 		}
-		cout << i << " " << j << " " << max_cycle << endl;
+		cout << maxLength << endl;
 	}
+
 	return 0;
 }
